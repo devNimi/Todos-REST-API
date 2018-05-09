@@ -12,3 +12,14 @@ note: for now if you run testing code, it currently wipes out **todos** local da
 note:
 
 remove toHexString on generateAuthToken
+
+replace
+"user.tokens.push({access, token});"
+
+with
+
+
+user.tokens = user.tokens.concat([{access, token}]);
+
+
+in generateAuthToken
