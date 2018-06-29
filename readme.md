@@ -1,5 +1,9 @@
+Documentation for API can be found [over here](https://documenter.getpostman.com/view/4315841/RWEnkv4j)
+
 ### installing modules
 `npm i`
+
+note: for development make sure mongo db is locally installed. You may need to configure or create `server/config/config.json` file to have your own JSON WEB TOKEN SECRET, for ease I'm shipping it with code now. BUt it may be removed in near future.
 
 ### for testing
 
@@ -23,3 +27,8 @@ user.tokens = user.tokens.concat([{access, token}]);
 
 
 in generateAuthToken
+
+
+### getting started
+
+`node server/server.js`
